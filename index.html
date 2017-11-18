@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css" rel="stylesheet" integrity="sha384-zF4BRsG/fLiTGfR9QL82DrilZxrwgY/+du4p/c7J72zZj+FLYq4zY00RylP9ZjiT" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+<body>
+
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+  <div class="jumbotron jumbotron-billboard">
+   <div class="img"></div>
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1>Hangman</h1>
+        </div>
+    <div>
+        <button class="btn btn-warning btn-xs theme-button"><span class="glyphicon glyphicon-music"></span> Play Theme!</button>
+        <button class="btn btn-default btn-xs pause-button"><span class="glyphicon glyphicon-pause"></span> Pause Song</button>
+      </div>
+
+        <div class="row">
+
+            <div class="col-xs-6 col-md-4">
+                <div class="col-xs-12" id="hangman">
+                    <img class="col-xs-12" src="assets/images/Hangman-0.png">
+                </div>
+
+                <p class="text-muted text-right">
+                    History and How to Play Hangman: 
+                    <a href="https://en.wikipedia.org/wiki/Hangman_(game)" class="extiw" title="Hangman(game)">Hangman(game)</a>
+                </p>
+            </div>
+
+            <div class="col-xs-0 col-md-2"></div>
+
+            <div class="col-xs-6 col-md-6">
+                <div id="directions">
+                    <h2 class="hidden-xs visible-sm-* visible-md-* visible-lg-*">Press any key to get started!</h2>
+                    <h4 class="visible-xs-* hidden-sm hidden-md hidden-lg"><strong>Press any key to get started!</strong></h4>
+                </div>
+
+                <div id="game-board">
+                    <div class="lead text-success" id="wins"></div>
+
+                    <div class="lead text-danger" id="losses"></div>
+
+                    <div id="game-play"></div>
+
+                    <div style="height: 20px;"></div>
+
+                    <div class="lead text-warning" id="guesses"></div>
+                </div>
+            </div>
+
+        </div>
+    <div/>
+   </div>
+
+</body>
+</html>
